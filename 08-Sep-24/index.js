@@ -68,9 +68,11 @@ placeOrder("cheese");
 //    ```
 
 let greetPerson = (name) => {
-  console.log(`Hi, ${name}`);
+  console.log(`Hi, ${name} !`);
 };
 greetPerson("Bob");
+greetPerson("Prasad");
+greetPerson("Mahesh");
 
 // 7.	**Function Calling Another Function (Morning Routine)**:
 //    Write a function called `startMorning` that calls another function called `makeCoffee`. `makeCoffee` should print “Making coffee…”. Call `startMorning` to pretend you’re getting ready for the day.
@@ -148,18 +150,18 @@ calculateArea(12, 8);
 //    lunchBreak(eatLunch, takeNap); // Logs both tasks
 //    ```
 
-function eatLunch() {
+let eatLunch = () => {
   console.log("Eating lunch.....!");
-}
+};
 
-function takeNap() {
+let takeNap = () => {
   console.log("Taking a nap.....!");
-}
+};
 
-function lunchBreak(eatLunch, takeNap) {
+let lunchBreak = (eatLunch, takeNap) => {
   eatLunch();
   takeNap();
-}
+};
 lunchBreak(eatLunch, takeNap);
 
 // 12.	**Function Declaration (Support Team)**:
@@ -247,18 +249,18 @@ dailySchedule();
 //    exerciseRoutine(stretch, run); // Logs both tasks
 //  ```
 
-function stretch() {
+let stretch = () => {
   console.log("Before running first I did some stretching");
-}
+};
 
-function run() {
+let run = () => {
   console.log("Then I start running");
-}
+};
 
-function excerciseRoutine(stretch, run) {
+let excerciseRoutine = (stretch, run) => {
   stretch();
   run();
-}
+};
 excerciseRoutine(stretch, run);
 
 // 18.	**Arrow Function (Motivational Speaker)**:
