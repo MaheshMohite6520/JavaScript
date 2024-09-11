@@ -6,6 +6,8 @@
 // }
 // console.log(x);
 
+// JS Currying ------------------------>
+
 // let first = () => {
 //   return () => {
 //     console.log("JS Currying");
@@ -14,6 +16,8 @@
 
 // first()();
 // console.log(first()());
+
+// Assignments ------------------------->
 
 // **1. Repeated Call**
 // Write a function `repeatCall` that accepts a callback and a message string. The callback should call the provided message twice, returning the result as a single string.
@@ -153,16 +157,44 @@
 // `decisionMaker(callback, ‘start’)`
 // `callback` should return: `”Starting…”`
 
-let decisionMaker = (callback, message) => {
-  return callback(message);
+// let decisionMaker = (callback, message) => {
+//   return callback(message);
+// };
+
+// let callback = (message) => {
+//   if (message == "start") {
+//     return "Starting";
+//   } else {
+//     return "Stopping";
+//   }
+// };
+
+// console.log(decisionMaker(callback, "stop"));
+
+// Hoisting ---------------------------->
+
+// Function Declarations ---->
+
+console.log(sum(2, 3)); // 5
+
+function sum(a, b) {
+  return a + b;
+}
+
+// Function Expressions --->
+console.log(multiply); // undefined
+
+var multiply = function (a, b) {
+  return a * b;
 };
 
-let callback = (message) => {
-  if (message == "start") {
-    return "Starting";
-  } else {
-    return "Stopping";
-  }
-};
+// console.log(divide); // ReferenceError: Cannot access 'divide' before initialization
 
-console.log(decisionMaker(callback, "stop"));
+// let divide = function (a, b) {
+//   return a / b;
+// };
+
+console.log(divide2); // ReferenceError: Cannot access 'divide' before initialization
+const divide2 = function (a, b) {
+  return a / b;
+};
