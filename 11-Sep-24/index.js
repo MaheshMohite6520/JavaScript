@@ -28,11 +28,11 @@
 
 // let repeatCall = (callback, message) => {
 //   return callback(message);
-// }
+// };
 
 // let callback = (message) => {
 //   return message + " " + message;
-// }
+// };
 
 // console.log(repeatCall(callback, "Let’s go!"));
 
@@ -64,15 +64,15 @@
 // `repeatMessage(callback, ‘Goodbye’)`
 // `callback` should return: `”Goodbye Goodbye”`
 
-// let repeatMessage = (callback, message) => {
-//   return callback(message);
+// let repeatMessage = (cb, message) => {
+//   return cb(message);
 // };
 
-// let callback = (message) => {
+// let cb = (message) => {
 //   return message + " " + message;
 // };
 
-// console.log(repeatMessage(callback, "GoodBye"));
+// console.log(repeatMessage(cb, "GoodBye"));
 
 // **4. Toggle Switch**
 // Write a function `toggleSwitch` that accepts a callback and a string (either `”on”` or `”off”`). The callback should return `”Switched on”` if the string is `”off”` and `”Switched off”` if the string is `”on”`.
@@ -157,36 +157,36 @@
 // `decisionMaker(callback, ‘start’)`
 // `callback` should return: `”Starting…”`
 
-// let decisionMaker = (callback, message) => {
-//   return callback(message);
-// };
+let decisionMaker = (callback, message) => {
+  return callback(message);
+};
 
-// let callback = (message) => {
-//   if (message == "start") {
-//     return "Starting";
-//   } else {
-//     return "Stopping";
-//   }
-// };
+let callback = (message) => {
+  if (message == "start") {
+    return "Starting";
+  } else {
+    return "Stopping";
+  }
+};
 
-// console.log(decisionMaker(callback, "stop"));
+console.log(decisionMaker(callback, "stop"));
 
 // Hoisting ---------------------------->
 
 // Function Declarations ---->
 
-console.log(sum(2, 3)); // 5
+// console.log(sum(2, 3)); // 5
 
-function sum(a, b) {
-  return a + b;
-}
+// function sum(a, b) {
+//   return a + b;
+// }
 
 // Function Expressions --->
-console.log(multiply); // undefined
+// console.log(multiply); // undefined
 
-var multiply = function (a, b) {
-  return a * b;
-};
+// var multiply = function (a, b) {
+//   return a * b;
+// };
 
 // console.log(divide); // ReferenceError: Cannot access 'divide' before initialization
 
@@ -194,7 +194,7 @@ var multiply = function (a, b) {
 //   return a / b;
 // };
 
-console.log(divide2); // ReferenceError: Cannot access 'divide' before initialization
-const divide2 = function (a, b) {
-  return a / b;
-};
+// console.log(divide2); // ReferenceError: Cannot access 'divide' before initialization
+// const divide2 = function (a, b) {
+//   return a / b;
+// };
