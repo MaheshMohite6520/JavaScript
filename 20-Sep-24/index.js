@@ -100,14 +100,14 @@ let arr = [10, 20, 30, 40];
 
 // It accepts 3 arguments (value, index, whole array)
 
-arr.forEach((val, index, ref) => {
-  console.log("Value: " + val);
-  console.log("Index: " + index);
-  console.log("Array: " + ref);
-  console.log("--------------");
-});
+// arr.forEach((val, index, ref) => {
+//   console.log("Value: " + val);
+//   console.log("Index: " + index);
+//   console.log("Array: " + ref);
+//   console.log("--------------");
+// });
 
-console.log("----------------------------------------------");
+// console.log("----------------------------------------------");
 
 // Implicit return
 // let a = (val) => "hello";
