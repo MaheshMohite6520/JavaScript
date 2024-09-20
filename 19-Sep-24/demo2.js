@@ -52,12 +52,12 @@
 
 // Array Methods ------------>
 
-let arr = [10, 20, 30, 40];
+// let arr = [10, 20, 30, 40];
 
-console.log(arr.indexOf(10));
-console.log(arr.indexOf(100));
-console.log(arr.at(0));
-console.log(arr.at(10));
-console.log(arr.reverse());
-console.log(arr.splice(1, 3));
-console.log(arr.slice(0, 3));
+// console.log(arr.indexOf(10));
+// console.log(arr.indexOf(100));
+// console.log(arr.at(0));
+// console.log(arr.at(10));
+// console.log(arr.reverse());
+// console.log(arr.splice(1, 3));
+// console.log(arr.slice(0, 3));
