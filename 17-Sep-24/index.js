@@ -55,6 +55,7 @@
 // };
 // let cb = (i) => {
 //   console.log(i);
+//   console.log("cb called");
 // };
 // whileLoopWithCallback(cb, 20);
 
@@ -69,6 +70,7 @@
 // };
 // let cb = (i) => {
 //   console.log(i);
+//   console.log("cb called");
 // };
 // doWhileLoopWithCallback(cb, 10);
 
@@ -135,7 +137,7 @@
 // let cb = (message) => {
 //   console.log(message);
 // };
-// getDayOfWeekWithCallback(2, cb);
+// getDayOfWeekWithCallback(3, cb);
 
 // Q. 10. Function with Return and Callback:Create a higher-order function called `multiplyWithCallback` that accepts two numbers and a callback. Multiply the two numbers inside the function, then call the callback with the result. The callback should print the result to the console.
 
