@@ -45,18 +45,18 @@
 // console.log(obj1);
 // console.log(obj2);
 
-class Obj2 {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-    console.log(name + " " + age);
-  }
-}
+// class Obj2 {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     console.log(name + " " + age);
+//   }
+// }
 
-let obj1 = new Obj2("Mahesh", 22);
-let obj2 = new Obj2("Prasad", 27);
-console.log(obj1);
-console.log(obj2);
+// let obj1 = new Obj2("Mahesh", 22);
+// let obj2 = new Obj2("Prasad", 27);
+// console.log(obj1);
+// console.log(obj2);
 
 // Way-4 for creating an object (using factory function in JS)------------------->
 
@@ -98,3 +98,14 @@ console.log(obj2);
 
 // delete obj;
 // console.log(obj);
+
+let obj1 = {
+  name: "chombi",
+  age: 16,
+  speak: function () {
+    console.log(
+      "My name is" + this.name + ",age" + this.age + " and i can speak"
+    );
+  },
+};
+console.log(obj1["speak"]());
