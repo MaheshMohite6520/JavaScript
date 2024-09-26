@@ -1,4 +1,4 @@
-// Ways of printing statements in JS
+//! Ways of printing statements in JS ------------>
 
 // console.log("hello");
 // console.error("hello");
@@ -16,11 +16,12 @@
 
 // console.log(document);
 
+//! infinite loop ------>
 // while (true) {
 //   window.prompt("Enter your name");
 // }
 
-// Experiment ----------->
+//! Experiment ----------->
 
 console.log(a);
 var a = 10;

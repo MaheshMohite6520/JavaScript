@@ -1,3 +1,5 @@
+//! Closure --------------->
+
 let parent = () => {
   let bike = "Bullet";
 

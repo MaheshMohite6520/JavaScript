@@ -9,7 +9,8 @@
 // console.log(obj.key);
 // console.log(obj.value);
 
-// // Accessing values inside object
+//! Accessing values inside object -------->
+
 // console.log(obj["key"]);
 
 // obj.keyyy = 100;
@@ -24,13 +25,14 @@
 // delete obj.key;
 // console.log(obj);
 
-// console.log("----------------------------------------------");
+//! console.log("----------------------------------------------");
+
+//! inside arrow function we cannot use this keyword cause it will point towards window object
 
 // let obj = {
 //   name: "Ram",
 //   add: "Pune",
 //   mob: 7837463798,
-//   // inside arrow function wr cannot use this keyword cause it will point towards window object
 //   func: () => {
 //     console.log("func executed");
 //     console.log(obj.name);
@@ -51,9 +53,9 @@
 // obj.func();
 // obj.func2();
 
-// console.log("----------------------------------------------");
+//! console.log("----------------------------------------------");
 
-let arr = [10, 20, 30, 40];
+// let arr = [10, 20, 30, 40];
 // console.log(arr);
 
 // arr.push(50);
@@ -84,14 +86,16 @@ let arr = [10, 20, 30, 40];
 //   i++;
 // } while (i < arr.length);
 
-// forEach() ------>
+//! forEach() ------------------>
 
-// // callback function
+//! callback function
+
 // let myFunc = (val) => {
 //   console.log(val);
 // };
 
-// // Higher order function
+//! Higher order function
+
 // arr.forEach(myFunc);
 
 // arr.forEach((val) => {
@@ -107,9 +111,10 @@ let arr = [10, 20, 30, 40];
 //   console.log("--------------");
 // });
 
-// console.log("----------------------------------------------");
+//! console.log("----------------------------------------------");
 
-// Implicit return
+//! Implicit return ---->
+
 // let a = (val) => "hello";
 // console.log(a);
 // console.log(a());

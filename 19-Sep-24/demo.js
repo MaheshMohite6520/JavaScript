@@ -1,6 +1,6 @@
 //! console.log("---------------------------Objects----------------------");
 
-// Way-1 for creating an object (Object Literal Way) -------------->
+//! Way-1 for creating an object (Object Literal Way) -------------->
 
 // let car = {
 //   color: "White",
@@ -19,7 +19,7 @@
 
 // console.log(car);
 
-// Way-2 for creating an object (Using new keyword & Object class) -------------->
+//! Way-2 for creating an object (Using new keyword & Object class) -------------->
 
 // let obj = new Object();
 // console.log(obj);
@@ -31,7 +31,7 @@
 // let obj1 = new Object({ name: "Mahesh" });
 // console.log(obj1);
 
-// Way-3 for creating an object (using classes in JS)------------------->
+//! Way-3 for creating an object (using classes in JS)------------------->
 
 // class CreateObj {
 //   constructor(name) {
@@ -58,7 +58,7 @@
 // console.log(obj1);
 // console.log(obj2);
 
-// Way-4 for creating an object (using factory function in JS)------------------->
+//! Way-4 for creating an object (using factory function in JS)------------------->
 
 // let createObj = (name, address) => {
 //   let obj = {
@@ -75,29 +75,32 @@
 
 // console.log(createObj("Rohit", "India"));
 
-// <------------------------ CRUD Operation ------------------------>
+//! <------------------------ CRUD Operation ------------------------>
 
-// 1. Create object
+//! 1. Create object
+
 // let obj = {
 //   name: "Tinki",
 // };
 // console.log(obj);
 
-// 2. Add properties to object
+//! 2. Add properties to object
+
 // obj.add = "Pune";
 // console.log(obj);
 
-// 3. Update object properties
+//! 3. Update object properties
+
 // obj.name = "Tinku";
 // obj.add = "Deccan, Pune";
 // console.log(obj);
 
-// 4. Delete properties of an Object by using "delete" operator
+//! 4. Delete properties of an Object by using "delete" operator
+
 // delete obj.add;
 // console.log(obj);
 
-// delete obj;
-// console.log(obj);
+//! 5. Accessing object properties
 
 let obj1 = {
   name: "chombi",

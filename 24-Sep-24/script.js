@@ -1,4 +1,4 @@
-console.log("Object");
+// console.log("Object");
 
 let obj = {
   name: "Tinku",
@@ -12,4 +12,4 @@ console.log(keys);
 let values = Object.values(obj);
 console.log(values);
 
-// Presentation in class
+//! Presentation in class

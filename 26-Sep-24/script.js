@@ -61,9 +61,19 @@ let superhero = {
 //! It will bind a function to specific object & return the reference. We need to store it in a variable & call it
 //! It will take argument seperated by comma
 
-function myFunc(realName, add) {
-  console.log(realName);
-  console.log(add);
+// function myFunc(realName, add) {
+//   console.log(realName);
+//   console.log(add);
+// }
+// let bindedFunc = myFunc.bind(superhero, "Peter Parker", "NewYork");
+// bindedFunc();
+
+let villains = ["Dr. Octopus", "Green Goblin", "Sand Man", "Electro"];
+
+function myFunc(vill1, vill2, vill3, vill4) {
+  console.log(vill1);
+  console.log(vill2);
+  console.log(vill3);
+  console.log(vill4);
 }
-let bindedFunc = myFunc.bind(superhero, "Peter Parker", "NewYork");
-bindedFunc();
+myFunc.apply(superhero, villains);

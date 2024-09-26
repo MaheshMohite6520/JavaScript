@@ -1,36 +1,37 @@
-// Functions ------------------>
+//! Functions ------------------>
 
-// Function declaration Way-1 ----> function as an expression
+//! Function declaration Way-1 ----> function as an expression
+
 let firstFunction = function () {
   console.log("firstFunction called and executed");
 };
 firstFunction();
 
-// Addition Function
+//! Addition Function
 let add = function (a, b) {
   console.log(`The addition of ${a} & ${b} is: ${a + b}`);
 };
 add(200, 400);
 
-// Subtraction Function
+//! Subtraction Function
 let sub = function (a, b) {
   console.log(`The subtraction of ${a} & ${b} is: ${a - b}`);
 };
 sub(400, 100);
 
-// Multiplication Function
+//! Multiplication Function
 let mul = function (a, b) {
   console.log(`The multiplication of ${a} & ${b} is: ${a * b}`);
 };
 20, 10;
 
-// Division Function
+//! Division Function
 let div = function (a, b) {
   console.log(`The division of ${a} & ${b} is: ${a / b}`);
 };
 div(200, 20);
 
-// Modulus Function
+//! Modulus Function
 let mod = function (a, b) {
   console.log(`The modulus of ${a} & ${b} is: ${a % b}`);
 };
@@ -38,7 +39,8 @@ mod(100, 3);
 
 console.log("-----------------------------------");
 
-// Function declaration Way-2 ----> function without expression
+//! Function declaration Way-2 ----> function without expression
+
 function second() {
   console.log("second function called & executed");
 }
@@ -71,7 +73,7 @@ modulus(25, 4);
 
 console.log("--------------------------------");
 
-// Function declaration Way-3 ----> Arrow function
+//! Function declaration Way-3 ----> Arrow function
 
 // let thirdFunction = () => {
 //   console.log("third function called & executed");
@@ -110,7 +112,7 @@ modFunction(500, 10);
 
 console.log("-------------------------");
 
-// Introduction --------->
+//! Introduction --------->
 
 let intro1 = function (name, nativePlace, age) {
   console.log(
@@ -138,7 +140,7 @@ intro3("Prasad", "Pune", 23);
 
 console.log("-----------------------------------");
 
-// Orders ---------->
+//! Orders ---------->
 
 let order = function (item, name, size, price, addOns) {
   console.log(
@@ -149,7 +151,7 @@ order("Pizza", "Mahesh Mohite", "Extra Large", 1000, "Coke");
 
 console.log("-------------------------------");
 
-// Animal Sound -------->
+//! Animal Sound -------->
 
 function animalSound(name, sound) {
   console.log(`The sound of ${name} is ${sound} ${sound}`);

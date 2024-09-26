@@ -5,9 +5,9 @@
 //   add: "Pune",
 //   age: 22,
 //   gender: "Male",
-//   alarm : () => {
+//   alarm: () => {
 //     console.log("Snooooooozzzzzzzzzzz........!");
-//     // return "Tap";
+//     return "Tap";
 //   },
 // };
 
@@ -23,7 +23,7 @@
 
 // console.log(obj["user name"]);
 
-// console.log("---------------");
+//! console.log("---------------");
 
 // let obj = new Object({ name: "Tinku" });
 // console.log(obj);
@@ -31,24 +31,24 @@
 // obj.sal = 50000;
 // console.log(obj);
 
-// console.log("---------------");
+//! console.log("---------------");
 
 // class CreateObj {
 //   constructor(name) {
-//     // console.log(name);
+//     console.log(name);
 //     this.name = name;
 //   }
 // }
 // let obj1 = new CreateObj("Tinku");
 // console.log(obj1);
 
-// console.log("---------------");
+//! console.log("---------------");
 
 // let createObj = (name) => {
-//   // let a = 10;
-//   // console.log(name);
-//   // let userName = name;
-//   // console.log(userName);
+//   let a = 10;
+//   console.log(name);
+//   let userName = name;
+//   console.log(userName);
 //   let obj = {
 //     userName: name,
 //   };
@@ -58,7 +58,7 @@
 // let student1 = createObj("Tinku");
 // console.log(student1);
 
-// console.log("---------------");
+//! console.log("---------------");
 
 // let createObj = (name, qual, yop, marks, email, contact) => {
 //   let obj = {
@@ -72,7 +72,8 @@
 //   return obj;
 // };
 
-// ES-6 feature (when key and value are same we can only pass one)
+//! ES-6 feature (when key and value are same we can only pass one)
+
 // let createObj = (name, qual, yop, marks, email, contact) => {
 //   let obj = {
 //     name,
@@ -125,7 +126,7 @@
 // );
 // console.log(student4);
 
-// console.log("------------------");
+//! console.log("------------------");
 
 // let obj = {
 //   hobbies: ["Gaming", "Chess", "Cricket"],
@@ -143,52 +144,52 @@
 //   },
 // };
 
-// // Convert the object into an array
+//! Convert the object into an array
 
 // let arr = Object.entries(obj);
 // console.log(arr);
 
-// // Convert the array into an object
+//! Convert the array into an object
 
 // let obj1 = Object.fromEntries(arr);
 // console.log(obj1);
 
-// let arr = [10, 20, 30, 40]; // Iterator value 10 is not an entry object at function
+// let arr = [10, 20, 30, 40]; //! Iterator value 10 is not an entry object at function
 
 // let arr = [[10, 30], [20, "B"], [30, "num3"], [40]];
 
 // let obj = Object.fromEntries(arr);
 // console.log(obj);
 
-// console.log("-------------");
+//! console.log("-----------------------------");
 
-let parent = {
-  name: "Tinku",
-};
+// let parent = {
+//   name: "Tinku",
+// };
 
-let child1 = {
-  age: 22,
-};
+// let child1 = {
+//   age: 22,
+// };
 
-let child2 = {
-  gender: "Male",
-};
+// let child2 = {
+//   gender: "Male",
+// };
 
-let child3 = {
-  add: {
-    area: "Deccan",
-    pincode: 411052,
-  },
-};
+// let child3 = {
+//   add: {
+//     area: "Deccan",
+//     pincode: 411052,
+//   },
+// };
 
-let child4 = {
-  hobbies: ["Cricket", "Chess"],
-};
+// let child4 = {
+//   hobbies: ["Cricket", "Chess"],
+// };
 
-console.log(parent);
+// console.log(parent);
 
-Object.assign(parent, child1);
-console.log(parent);
+// Object.assign(parent, child1);
+// console.log(parent);
 
-Object.assign(parent, child1, child2, child3, child4);
-console.log(parent);
+// Object.assign(parent, child1, child2, child3, child4);
+// console.log(parent);

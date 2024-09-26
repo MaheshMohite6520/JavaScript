@@ -1,4 +1,6 @@
-// console.log("Hello from $ file");
+//! console.log("Hello from $ file");
+
+//! Symbol ------------>
 
 // let a = Symbol("Hello");
 // let b = Symbol("Hello");
@@ -9,69 +11,75 @@
 // console.log(a == b);
 // console.log(c == d);
 
-// console.log("Hello       jkf");
+//! console.log("Hello       jkf");
 
-// 1. Function without expression
+//! 1. Function without expression
+
 // first();
 // function first() {
 //   console.log("first function");
 // }
 // first();
 
-// // 2. function with expression
-// // second(); // error
+//! 2. function with expression
+
+// second(); //! error
 // var second = function () {
 //   console.log("function second");
 // };
 // second();
 
-// // 3. Immediate invoke function
-// (function imm() {
+//! 3. Immediate invoke function (IIFE)
+
+// (function iife() {
 //   console.log("Immediate invoke function");
 // })();
 
-// // 4. arrow function
-// // arr() // error
+//! 4. Arrow function
+
+// arr() // error
 // let arr = () => {
 //   console.log("from arrow function");
 // };
 // arr();
 
-// // 5 & 6. Higher order function & callback function
+//! 5 & 6. Higher order function & callback function
 
 // function cb() {
 //   console.log("callback function");
 // }
+
 // function hof(cb) {
 //   console.log("higher order function");
 //   cb();
 // }
 // hof(cb);
 
-// // 7. nested functions
+//! 7. nested functions
+
 // function outer() {
 //   function inner() {
-//     // console.log("inner function");
+// console.log("inner function");
 //     return "inner";
 //   }
-//   // console.log("outer function");
+// console.log("outer function");
 //   return inner;
 // }
-// // outer()(); // JS currying
+// outer()(); // JS currying
 // console.log(outer()());
 // outer()();
 
-// Hoisting
+//! Hoisting --------------->
 
 // console.log(a);
 // var a = 10;
 // console.log(a);
 
-// // console.log(b); // error
+// console.log(b); //! error
 // let b = 20;
 // console.log(b);
 
-// // console.log(c);  // error
+// console.log(c);  //! error
 // const c = 30;
 // console.log(c);
 
@@ -81,16 +89,15 @@
 // }
 // fun();
 
-// Lexical scoping & closure
+//! Lexical scoping & closure ------------>
 
-function father() {
-  let bike = "Bullet"; // closure
+// function father() {
+//   let bike = "Bullet"; // closure
 
-  function inner() {
-    console.log(bike);
-  }
+//   function inner() {
+//     console.log(bike);
+//   }
+//   return inner;
+// }
 
-  return inner;
-}
-
-father()();
+// father()();

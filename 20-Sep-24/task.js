@@ -1,4 +1,4 @@
-// ### Task 1: Print Each Element
+//! ### Task 1: Print Each Element
 // Create an array of your favorite foods and use the `forEach` method to print each food item to the console.
 
 // ```javascript
@@ -19,7 +19,7 @@
 //   console.log(food);
 // });
 
-// ### Task 2: Square Each Number
+//! ### Task 2: Square Each Number
 // Create an array of numbers. Use the `forEach` method to square each number and print the result to the console.
 
 // ```javascript
@@ -40,7 +40,7 @@
 //   console.log(n * n);
 // });
 
-// ### Task 3: Concatenate Strings
+//! ### Task 3: Concatenate Strings
 // Create an array of strings. Use the `forEach` method to concatenate the string " is awesome!" to each element and print the result.
 
 // ```javascript
@@ -60,7 +60,7 @@
 //   console.log(`${hobby} is awesome!`);
 // });
 
-// ### Task 4: Sum of Array Elements
+//! ### Task 4: Sum of Array Elements
 // Create an array of numbers. Use the `forEach` method to find the sum of all elements in the array and print the total.
 
 // ```javascript
@@ -79,7 +79,7 @@
 // });
 // console.log(`Total Sum = ${sum}`);
 
-// ### Task 5: Capitalize Each String
+//! ### Task 5: Capitalize Each String
 // Create an array of lowercase words. Use the `forEach` method to capitalize the first letter of each word and print the result.
 
 // ```javascript
@@ -99,7 +99,7 @@
 //   console.log(word.charAt(0).toUpperCase() + word.slice(1));
 // });
 
-// ### Task 6: Add Index to Each Element
+//! ### Task 6: Add Index to Each Element
 // Create an array of random items. Use the `forEach` method to add the index position to each element (e.g., "Item0", "Item1", etc.) and print the result.
 
 // ```javascript
@@ -113,7 +113,7 @@
 // Phone3
 // ```
 
-let items = ["Book", "Pen", "Laptop", "Phone"];
+// let items = ["Book", "Pen", "Laptop", "Phone"];
 
 // items.forEach((item, index) => {
 //   console.log(item.concat(index));
@@ -123,7 +123,7 @@ let items = ["Book", "Pen", "Laptop", "Phone"];
 //   console.log(item + index);
 // });
 
-// ### Task 7: Check Even or Odd
+//! ### Task 7: Check Even or Odd
 // Create an array of numbers. Use the `forEach` method to print whether each number is even or odd.
 
 // ```javascript
@@ -148,7 +148,7 @@ let items = ["Book", "Pen", "Laptop", "Phone"];
 //   }
 // });
 
-// ### Task 8: Filter Out Short Names
+//! ### Task 8: Filter Out Short Names
 // Create an array of names with varying lengths. Use the `forEach` method to print only the names that have more than 4 characters.
 
 // ```javascript
@@ -168,7 +168,7 @@ let items = ["Book", "Pen", "Laptop", "Phone"];
 //   }
 // });
 
-// ### Task 9: Count Vowels
+//! ### Task 9: Count Vowels
 // Create an array of single letters. Use the `forEach` method to count the number of vowels and print the total.
 
 // ```javascript
@@ -179,19 +179,19 @@ let items = ["Book", "Pen", "Laptop", "Phone"];
 // Number of vowels: 5
 // ```
 
-let letters = ["a", "b", "e", "i", "o", "p", "u"];
-let ct = 0;
+// let letters = ["a", "b", "e", "i", "o", "p", "u"];
+// let ct = 0;
 
-letters.forEach((val) => {
-  if (
-    (val == "a") |
-    (val == "e") |
-    (val == "i") |
-    (val == "o") |
-    (val == "u")
-  ) {
-    ct++;
-  }
-});
+// letters.forEach((val) => {
+//   if (
+//     (val == "a") |
+//     (val == "e") |
+//     (val == "i") |
+//     (val == "o") |
+//     (val == "u")
+//   ) {
+//     ct++;
+//   }
+// });
 
-console.log(`Number of vowels = ${ct}`);
+// console.log(`Number of vowels = ${ct}`);

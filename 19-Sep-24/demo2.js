@@ -1,6 +1,6 @@
 //! console.log("---------------------------Arrays----------------------");
 
-// 1. Declaring an array ---->
+//! 1. Declaring an array ---->
 
 // let arr = [
 //   "Mobile",
@@ -26,31 +26,37 @@
 // console.log("First element: " + arr[0]);
 // console.log(`Last Element: ${arr[arr.length - 1]}`);
 
-// CRUD Operations with arrays ------------------->
+//! CRUD Operations with arrays ------------------->
 
-// 1. Create an array
+//! 1. Create an array
+
 // let arr = [10, 20, 30];
 
-// 2. Read an array
+//! 2. Read an array
+
 // console.log(arr);
 
-// 3. Add an element into an array (last index)
+//! 3. Add an element into an array (last index)
+
 // arr.push(40);
 // console.log(arr);
 
-// 4. Delete an element from array (last index)
+//! 4. Delete an element from array (last index)
+
 // arr.pop();
 // console.log(arr);
 
-// 5. Add an element into an array (first index)
+//! 5. Add an element into an array (first index)
+
 // arr.unshift(50);
 // console.log(arr);
 
-// 6. Delete an element from array (first index)
+//! 6. Delete an element from array (first index)
+
 // arr.shift();
 // console.log(arr);
 
-// Array Methods ------------>
+//! Array Methods ------------>
 
 // let arr = [10, 20, 30, 40];
 

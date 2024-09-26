@@ -34,7 +34,8 @@
 // console.log(0 / true) // 0
 // console.log(false / 's') // NaN
 
-// Symbol ----->
+//! Symbol ----->
+
 // It is a Primitive datatype
 // It is used to declare a new identity
 // var a = Symbol('hello')
@@ -45,47 +46,49 @@
 // console.log(Number('10a')) // NaN
 // console.log(BigInt('adfas')) // error
 
-// var, let & const ---------->
+//! var, let & const ---------->
 
-// 1. Declaration ---->
-var a
-console.log(a) // undefined
+//! 1. Declaration ---->
 
-let b
-console.log(a) // undefined
+var a;
+console.log(a); // undefined
+
+let b;
+console.log(a); // undefined
 
 // const c;
 // console.log(a);  // error
 
-// 2. Initialization ---->
-var d
-d = 10
-console.log(d)
+//! 2. Initialization ---->
 
-let e
-e = 20
-console.log(e)
+var d;
+d = 10;
+console.log(d);
+
+let e;
+e = 20;
+console.log(e);
 
 // const f
 // f = 30
 // console.log(f);  // error
 
-// 3. Declaration & Initialization ----->
+//! 3. Declaration & Initialization ----->
 
-var g = 100
-console.log(g)
+var g = 100;
+console.log(g);
 
-let h = 200
-console.log(h)
+let h = 200;
+console.log(h);
 
-const i = 7.142
-console.log(i)
+const i = 7.142;
+console.log(i);
 
-// 4. Re-Delaration ---->
+//! 4. Re-Delaration ---->
 
-var j
-var j
-console.log(j)
+var j;
+var j;
+console.log(j);
 
 // let k
 // let k
@@ -95,25 +98,25 @@ console.log(j)
 // const l
 // console.log(l);  // error
 
-// 5. Re-Initialization ------>
+//! 5. Re-Initialization ------>
 
-var m = 45
-m = 18
-console.log(m)
+var m = 45;
+m = 18;
+console.log(m);
 
-let n = 56
-n = 78
-console.log(n)
+let n = 56;
+n = 78;
+console.log(n);
 
 // const o = 45
 // o = 89
 // console.log(o)   // error
 
-// 6. Re-Delaration & Re-Initialization -------->
+//! 6. Re-Delaration & Re-Initialization -------->
 
-var p = 67
-var p = 78
-console.log(p)
+var p = 67;
+var p = 78;
+console.log(p);
 
 // let q = 78
 // let q = 68

@@ -1,4 +1,4 @@
-// Linkdin
+//! Linkdin ------------->
 
 // let x = 1;
 // if (function f() {}) {
@@ -6,7 +6,7 @@
 // }
 // console.log(x);
 
-// JS Currying ------------------------>
+//! JS Currying ------------------------>
 
 // let first = () => {
 //   return () => {
@@ -17,12 +17,12 @@
 // first()();
 // console.log(first()());
 
-// Assignments ------------------------->
+//! Assignments ------------------------->
 
-// **1. Repeated Call**
+//! **1. Repeated Call**
 // Write a function `repeatCall` that accepts a callback and a message string. The callback should call the provided message twice, returning the result as a single string.
 
-// **Example:**
+//! **Example:**
 // `repeatCall(callback, ‘Let’s go!’)`
 // `callback` should return: `”Let’s go! Let’s go!”`
 
@@ -36,10 +36,10 @@
 
 // console.log(repeatCall(callback, "Let’s go!"));
 
-// **2. Simple Decision Maker**
+//! **2. Simple Decision Maker**
 // Write a function `decideAction` that accepts a callback function and a string (action). The callback should return `”Approved”` if the action is `”proceed”`, and `”Denied”` otherwise.
 
-// **Example:**
+//! **Example:**
 // `decideAction(callback, ‘proceed’)`
 // `callback` should return: `”Approved”`
 
@@ -55,12 +55,12 @@
 //   }
 // };
 
-// console.log(decideAction(callback, "proceed"));
+// console.log(decideAction(callback, "procee"));
 
-// **3. Repeated Message**
+//! **3. Repeated Message**
 // Write a function `repeatMessage` that accepts a callback and a message string. The callback should return the message repeated twice.
 
-// **Example:**
+//! **Example:**
 // `repeatMessage(callback, ‘Goodbye’)`
 // `callback` should return: `”Goodbye Goodbye”`
 
@@ -74,10 +74,10 @@
 
 // console.log(repeatMessage(cb, "GoodBye"));
 
-// **4. Toggle Switch**
+//! **4. Toggle Switch**
 // Write a function `toggleSwitch` that accepts a callback and a string (either `”on”` or `”off”`). The callback should return `”Switched on”` if the string is `”off”` and `”Switched off”` if the string is `”on”`.
 
-// **Example:**
+//! **Example:**
 // `toggleSwitch(callback, ‘off’)`
 // `callback` should return: `”Switched on”`
 
@@ -95,10 +95,10 @@
 
 // console.log(toggleSwitch(callback, "off"));
 
-// **5. Yes or No Decision**
+//! **5. Yes or No Decision**
 // Write a function `askYesOrNo` that accepts a callback function and a response string (`”yes”` or `”no”`). The callback should return `”Confirmed”` for `”yes”` and `”Rejected”` for `”no”`.
 
-// **Example:**
+//! **Example:**
 // `askYesOrNo(callback, ‘yes’)`
 // `callback` should return: `”Confirmed”`
 
@@ -116,10 +116,10 @@
 
 // console.log(askYesOrNo(callback, "yes"));
 
-// **6. Reverse the Text**
+//! **6. Reverse the Text**
 // Write a function `reverseText` that accepts a callback and a string. The callback should return the string reversed.
 
-// **Example:**
+//! **Example:**
 // `reverseText(callback, ‘world’)`
 // `callback` should return: `”dlrow”`
 
@@ -133,10 +133,10 @@
 
 // console.log(reverseText(callback, "world"));
 
-// **7. Personalized Farewell**
+//! **7. Personalized Farewell**
 // Write a function `createFarewell` that accepts a callback and a name string. The callback should return `”Goodbye, [name]!”` where `[name]` is replaced with the provided name.
 
-// **Example:**
+//! **Example:**
 // `createFarewell(callback, ‘Bob’)`
 // `callback` should return: `”Goodbye, Bob!”`
 
@@ -150,30 +150,30 @@
 
 // console.log(createFarewell(callback, "Tejas"));
 
-// **8. Decision Logic**
+//! **8. Decision Logic**
 // Write a function `decisionMaker` that accepts a callback and a string (`”start”` or `”stop”`). The callback should return `”Starting…”` if the string is `”start”` and `”Stopping…”` if the string is `”stop”`.
 
-// **Example:**
+//! **Example:**
 // `decisionMaker(callback, ‘start’)`
 // `callback` should return: `”Starting…”`
 
-let decisionMaker = (callback, message) => {
-  return callback(message);
-};
+// let decisionMaker = (callback, message) => {
+//   return callback(message);
+// };
 
-let callback = (message) => {
-  if (message == "start") {
-    return "Starting";
-  } else {
-    return "Stopping";
-  }
-};
+// let callback = (message) => {
+//   if (message == "start") {
+//     return "Starting";
+//   } else {
+//     return "Stopping";
+//   }
+// };
 
-console.log(decisionMaker(callback, "stop"));
+// console.log(decisionMaker(callback, "stop"));
 
-// Hoisting ---------------------------->
+//! Hoisting ---------------------------->
 
-// Function Declarations ---->
+//! Function Declarations ---->
 
 // console.log(sum(2, 3)); // 5
 
@@ -181,20 +181,25 @@ console.log(decisionMaker(callback, "stop"));
 //   return a + b;
 // }
 
-// Function Expressions --->
+//! Function Expressions --->
+
 // console.log(multiply); // undefined
 
 // var multiply = function (a, b) {
 //   return a * b;
 // };
 
-// console.log(divide); // ReferenceError: Cannot access 'divide' before initialization
+// console.log("-----------------------")
+
+// console.log(divide); //! ReferenceError: Cannot access 'divide' before initialization
 
 // let divide = function (a, b) {
 //   return a / b;
 // };
 
-// console.log(divide2); // ReferenceError: Cannot access 'divide' before initialization
+// console.log("-----------------------")
+
+// console.log(divide2); //! ReferenceError: Cannot access 'divide' before initialization
 // const divide2 = function (a, b) {
 //   return a / b;
 // };

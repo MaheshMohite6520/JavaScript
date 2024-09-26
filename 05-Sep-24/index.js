@@ -1,8 +1,6 @@
 let operation = (cbfunc, x, y) => {
   console.log("operation is called");
-
   console.log(cbfunc, x, y);
-
   cbfunc(33, 44);
 };
 
@@ -27,9 +25,10 @@ let div = (a, b) => {
 };
 
 operation(add);
-
+console.log("------------------");
 operation(sub, 20, 10);
-
+console.log("------------------");
 operation(mul);
-
+console.log("------------------");
 operation(div, 200, 10);
+console.log("------------------");

@@ -1,33 +1,30 @@
-// Scope : var
+//! Scope : var
 
-var a = 10
-if(true)
-{
-  console.log(a);
-  var a = 20
-  console.log(a);
+// var a = 10
+// if(true)
+// {
+//   console.log(a);  // 10
+//   var a = 20
+//   console.log(a); // 20
+// }
+// console.log(a); // 20
+
+//! Scope : let
+
+// let a = 10;
+// if (true) {
+//   // console.log(a);  // error
+//   let a = 20;
+//   console.log(a); // 20
+// }
+// console.log(a); // 10
+
+//! Scope : const
+
+const a = 10;
+if (true) {
+  // console.log(a); // error
+  const a = 20;
+  console.log(a); // 20
 }
-console.log(a);
-
-
-// Scope : let
-
-// let a = 10
-// if(true)
-// {
-//   console.log(a);
-//   let a = 20
-//   console.log(a);
-// }
-// console.log(a);
-
-// Scope : const
-
-// const a = 10
-// if(true)
-// {
-//   console.log(a);
-//   const a = 20
-//   console.log(a);
-// }
-// console.log(a);
+console.log(a); // 10
