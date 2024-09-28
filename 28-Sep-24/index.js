@@ -51,12 +51,12 @@
 
 //! API
 
-let name = prompt("Enter your Name: ");
-let address = prompt("Enter your address: ");
-let contact = prompt("Enter your contact: ");
-let id = prompt("Enter your id: ");
+// let name = prompt("Enter your Name: ");
+// let address = prompt("Enter your address: ");
+// let contact = prompt("Enter your contact: ");
+// let id = prompt("Enter your id: ");
 
-let newObj = { name, address, contact, id };
+// let newObj = { name, address, contact, id };
 
 let data = [
   {
@@ -361,9 +361,20 @@ let data = [
   },
 ];
 
-data.push(newObj);
+// data.push(newObj);
 console.log(data);
 
 // let jsonData = JSON.stringify(data[0]);
 // let data = JSON.parse(JSON.stringify(data[0]));
 // console.log(jsonData);
+
+let index = 0;
+
+data.forEach((element) => {
+  document.writeln(`
+    Id: ${element.id}
+    Name: ${element.name}
+    Address: ${element.address}
+    Contact: ${element.contact}
+  `);
+});
