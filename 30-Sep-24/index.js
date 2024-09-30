@@ -141,17 +141,17 @@ let data = [
 
 // console.log("-----------------------------")
 
-let arr = [10, 500, 30, 80, 20, 340, 980];
+// let arr = [10, 500, 30, 80, 20, 340, 980];
 
-let newArr = arr.forEach((val) => {
-  console.log(val + 100);
-  return val;
-});
-console.log("forEach(): ", newArr);
-console.log(arr);
+// let newArr = arr.forEach((val) => {
+//   console.log(val + 100);
+//   return val;
+// });
+// console.log("forEach(): ", newArr);
+// console.log(arr);
 
-let newArr2 = arr.sort((a, b) => {
-  return a - b;
-});
-console.log("sort(): ", newArr2);
-console.log(arr);
+// let newArr2 = arr.sort((a, b) => {
+//   return a - b;
+// });
+// console.log("sort(): ", newArr2);
+// console.log(arr);
