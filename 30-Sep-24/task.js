@@ -357,19 +357,19 @@
 //! 17. **Dynamic Access to Object Keys**
 //    Write a function `getProperty(obj, key)` that takes an object and a key as arguments. Check if the key exists in the object. If it exists, return the value of the key; otherwise, return `"Key not found"`.
 
-function getProperty(obj, key) {
-  if (key in obj) {
-    return obj[key];
-  } else {
-    return "Key not found";
-  }
-}
+// function getProperty(obj, key) {
+//   if (key in obj) {
+//     return obj[key];
+//   } else {
+//     return "Key not found";
+//   }
+// }
 
-const person = {
-  name: "John",
-  age: 30,
-};
+// const person = {
+//   name: "John",
+//   age: 30,
+// };
 
-console.log(getProperty(person, "name"));
-console.log(getProperty(person, "age"));
-console.log(getProperty(person, "country"));
+// console.log(getProperty(person, "name"));
+// console.log(getProperty(person, "age"));
+// console.log(getProperty(person, "country"));
