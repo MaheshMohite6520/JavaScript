@@ -99,8 +99,8 @@
 // ---
 
 // let objArr = [
-//   { name: "Alice", age: 25 },
-//   { name: "Bob", age: 30 },
+//   { name: "Tinku", age: 25 },
+//   { name: "Rinku", age: 30 },
 // ];
 // console.log(objArr);
 
