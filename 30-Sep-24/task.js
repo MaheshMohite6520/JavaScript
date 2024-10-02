@@ -1,4 +1,4 @@
-//! Q 1. **Extract Object Keys**
+//! Task 1. **Extract Object Keys**
 //    You are given an object representing a student:
 //    ```javascript
 //    const student = {
@@ -23,7 +23,7 @@
 //   console.log(`${key} : ${student[key]}`);
 // });
 
-//! Q 2. **Retrieve Object Values**
+//! Task 2. **Retrieve Object Values**
 //    Given the following object representing a movie:
 //    ```javascript
 //  const movie = {
@@ -48,10 +48,10 @@
 //   console.log(`${index + 1}: ${value}`);
 // });
 
-//! 3. **Convert Object to Key-Value Pairs**
+//! Task 3. **Convert Object to Key-Value Pairs**
 //    You have an object that represents a book:
 //    ```javascript
-//  const book = {
+//  let book = {
 //    title: '1984',
 //    author: 'George Orwell',
 //    genre: 'Dystopian'
@@ -59,7 +59,7 @@
 //    ```
 //    Convert the object into an array of key-value pairs and print each pair in the format: `key: value`.
 
-// const book = {
+// let book = {
 //   title: "1984",
 //   author: "George Orwell",
 //   genre: "Dystopian",
@@ -71,7 +71,7 @@
 //   console.log(`${value[0]} : ${value[1]}`);
 // });
 
-//! 4. **Recreate Object from Key-Value Pairs**
+//! Task 4. **Recreate Object from Key-Value Pairs**
 //    You are given an array of key-value pairs:
 //    ```javascript
 //    const keyValueArray = [
@@ -82,7 +82,7 @@
 //    ```
 //    Convert this array back into an object and print the newly created object.
 
-// const keyValueArray = [
+// let keyValueArray = [
 //   ["name", "Charlie"],
 //   ["age", 30],
 //   ["job", "Engineer"],
@@ -91,7 +91,7 @@
 // let obj = Object.fromEntries(keyValueArray);
 // console.log(obj);
 
-//! 5. **Merge Two Objects**
+//! Task 5. **Merge Two Objects**
 //    Given the following two objects:
 //    ```javascript
 //    const contactInfo = {
@@ -107,12 +107,12 @@
 //    ```
 //    Merge these two objects into a single `userInfo` object and print the merged object.
 
-// const contactInfo = {
+// let contactInfo = {
 //   phone: "123-456-7890",
 //   email: "john.doe@example.com",
 // };
 
-// const address = {
+// let address = {
 //   street: "123 Main St",
 //   city: "Anytown",
 //   state: "CA",
@@ -121,7 +121,7 @@
 // let userInfo = Object.assign({}, contactInfo, address);
 // console.log(userInfo);
 
-//! 6. **Shallow Copy with Object.assign**
+//! Task 6. **Shallow Copy with Object.assign**
 //    Create a nested object representing a `person`:
 //    ```javascript
 //    const person = {
@@ -135,7 +135,7 @@
 //    ```
 //    Create a shallow copy of the `person` object. Modify the `city` property in the copied object and check the original object.
 
-// const person = {
+// let person = {
 //   name: "John",
 //   age: 35,
 //   address: {
@@ -149,10 +149,10 @@
 // console.log(copy);
 // console.log(person);
 
-//! 7. **Deep Copy using JSON Methods**
+//! Task 7. **Deep Copy using JSON Methods**
 //    Given the same nested `person` object, create a deep copy of it. Modify the `address` in the deep copy and verify the original object remains unchanged.
 
-// const person = {
+// let person = {
 //   name: "John",
 //   age: 35,
 //   address: {
@@ -163,11 +163,21 @@
 
 // let jsonObj = JSON.stringify(person);
 // let copy = JSON.parse(jsonObj);
+
 // copy.address.city = "Pune";
+
 // console.log(person);
 // console.log(copy);
 
-//! 8. **Object Literal Syntax**
+//! Note:  If we change in nested object of deep copy it will change it original object also.
+
+// let deepCopy = Object.assign({}, person);
+// deepCopy.address.city = "Pune";
+
+// console.log(deepCopy);
+// console.log(person);
+
+//! Task 8. **Object Literal Syntax**
 //    Create an object using object literal syntax to represent a smartphone:
 //    Print each property of the `smartphone` object.
 
@@ -184,32 +194,40 @@
 //   console.log(`${value[0]} : ${value[1]}`);
 // });
 
-//! 9. **Factory Function**
+//! Task 9. **Factory Function**
 //    Write a factory function `createCar(make, model, year)` that returns an object representing a car. The object should have a `drive` method that logs the car's make and model. Use the factory function to create 3 different car objects and call the `drive()` method on each.
 
 // function createCar(make, model, year) {
 //   let obj = {
+//     // make: make,
+//     // model: model,
+//     // year: year,
+
 //     make,
 //     model,
 //     year,
-//     drive: function () {
-//       console.log(`Driving a ${this.year} ${this.make} ${this.model}`);
+
+//     drive: () => {
+//       // console.log(`Driving a ${this.year} ${this.make} ${this.model}`);
+//       console.log(`Driving a ${year} ${make} ${model}`);
 //     },
 //   };
 
 //   return obj;
 // }
 
-// const car1 = createCar("Toyota", "Corolla", 2015);
-// const car2 = createCar("Honda", "Civic", 2018);
-// const car3 = createCar("Ford", "Mustang", 2020);
+// let car1 = createCar("Toyota", "Corolla", 2015);
+// let car2 = createCar("Honda", "Civic", 2018);
+// let car3 = createCar("Ford", "Mustang", 2020);
 
 // car1.drive();
 // car2.drive();
 // car3.drive();
 
-//! 10. **Constructor Function**
+//! Task 10. **Constructor Function**
 //    Define a constructor function `User(name, email)` that initializes a user object with `name` and `email` properties. Add a method `greet()` to the constructor that logs a greeting message using the user’s name. Create multiple instances of `User` and call the `greet()` method on them.
+
+//! Way-1
 
 // class User {
 //   constructor(name, email) {
@@ -222,15 +240,33 @@
 //   };
 // }
 
-// const user1 = new User("Ayush More", "ayushmore@gmail.com");
-// const user2 = new User("Mahesh Mohite", "maheshmohite@gmail.com");
-// const user3 = new User("Gaurav More", "gmore@gmail.com");
+// let user1 = new User("Ayush More", "ayushmore@gmail.com");
+// let user2 = new User("Mahesh Mohite", "maheshmohite@gmail.com");
+// let user3 = new User("Gaurav More", "gauravkhalase@gmail.com");
 
 // user1.greet();
 // user2.greet();
 // user3.greet();
 
-//! 11. **Creating Objects with Classes**
+//! Way-2
+
+// function user(name, email) {
+//   (this.name = name),
+//     (this.email = email),
+//     (this.greet = function () {
+//       console.log(this.name + ", " + this.email);
+//     });
+// }
+
+// let user1 = new user("Ayush", "ayush@gmail.com");
+// let user2 = new user("Mahesh", "mahesh@gmail.com");
+// let user3 = new user("Gaurav", "gaurav@gmail.com");
+
+// user1.greet();
+// user2.greet();
+// user3.greet();
+
+//! Task 11. **Creating Objects with Classes**
 //    Create a class `Dog` with a constructor that takes `name` and `breed` as parameters. Add a method `bark()` that logs the dog's name followed by "is barking". Instantiate the class with 2 dogs and make them bark.
 
 // class Dog {
@@ -252,6 +288,8 @@
 //! 12. **Using Constructor Function**
 //    Create a constructor function `Movie(title, director)` that initializes a movie object. Add a prototype method `getDetails()` that returns a string with the title and director. Create a few movie instances and call `getDetails()` on them.
 
+//! Way-1
+
 // class Movie {
 //   constructor(title, director) {
 //     (this.title = title), (this.director = director);
@@ -264,6 +302,22 @@
 
 // let movie1 = new Movie("Bahubali", "Rajamauli");
 // let movie2 = new Movie("Inception", "Nolan");
+
+// movie1.getDetails();
+// movie2.getDetails();
+
+//! Way-2
+
+// function movie(title, director) {
+//   (this.title = title),
+//     (this.director = director),
+//     (this.getDetails = function () {
+//       console.log(this.title + ", " + this.director);
+//     });
+// }
+
+// let movie1 = new movie("Bahubali", "Rajamauli");
+// let movie2 = new movie("Inception", "Christopher Nolan");
 
 // movie1.getDetails();
 // movie2.getDetails();
@@ -314,7 +368,7 @@
 //    ```
 //    Add two new methods to the `robot` object: `greet()` and `performTask()`. The `greet` method should log the robot's name, and `performTask` should log a generic task message.
 
-// const robot = {
+// let robot = {
 //   name: "Robo",
 // };
 
@@ -328,6 +382,7 @@
 // };
 
 // Object.assign(robot, methods);
+// console.log(robot);
 
 // robot.greet();
 // robot.performTask();
@@ -343,7 +398,7 @@
 //    ```
 //    Iterate through the object and log each key-value pair in the format: `key: value`.
 
-// const movie = {
+// let movie = {
 //   title: "The Matrix",
 //   director: "Wachowskis",
 //   year: 1999,
@@ -365,7 +420,7 @@
 //   }
 // }
 
-// const person = {
+// let person = {
 //   name: "John",
 //   age: 30,
 // };
