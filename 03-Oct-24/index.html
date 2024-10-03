@@ -33,10 +33,7 @@
 
 </head>
 <body>
-  <h1>Array Methods</h1>
-
- 
-      
+  <h1 style="text-align: center;">Difference Between Array Methods</h1>
   
       <table border="1px">
           <tr style="font-weight: bolder;">
@@ -49,35 +46,30 @@
           </tr>
           <tr>
               <td>forEach</td>
-              <td>arr.forEach( cbf(element,index,wholeArray) => {} )</td>
-              <td>Iterate Over Array element</td>
+              <td>arr.forEach( (value, index ,wholeArray) => {} )</td>
+              <td>Iterate Over an Array</td>
               <td>No</td>
-              <td>N/A</td>
+              <td>No</td>
               <td>No</td>
           </tr>
           <tr>
               <td>sort function</td>
               <td>
                   Ascending Order <br> <br>
-                  arr.sort( cbf(currentValue,nextValue) => { return currentValue-nextValue } ) <br> <br>
+                  arr.sort( (currentValue, nextValue) => { return currentValue - nextValue } ) <br> <br>
                   Descending Order <br> <br>
-                  arr.sort( cbf(currentValue,nextValue) => { return nextValue-currentValue } )
+                  arr.sort( (currentValue, nextValue) => { return nextValue - currentValue } )
               </td>
               <td>sort values in order</td>
               <td>yes</td>
               <td>sorted Array[]
-                  <br>
-                  cbf of sorted() takes two parameters - currentValue & nextValue <br>
-                  It returns a value that is less than, equal to, or greater than 0 <br>
-                  If the result is less than 0, the current value comes first <br>
-                  If the result is greater than 0, the next value comes first <br>
-                  If the result is equal to 0, the order of the values remains the same
+                  
               </td>
               <td>Yes</td>
           </tr>
           <tr>
               <td>map function</td>
-              <td>arr.map( cbf(element,index,wholeArray) => { return } )</td>
+              <td>arr.map( (element, index, wholeArray) => { return } )</td>
               <td>Iterate Over Array element and map values as specified</td>
               <td>Yes</td>
               <td>returning Array[]</td>
@@ -85,7 +77,7 @@
           </tr>
           <tr>
               <td>filter function</td>
-              <td>arr.filter( cbf(element,index,wholeArray) => { return #condition } )</td>
+              <td>arr.filter( (element, index, wholeArray) => { return #condition } )</td>
               <td>filter out array value <br>
                   based on condition returning
               </td>
@@ -96,7 +88,7 @@
           <tr>
               <td>reduce function</td>
               <td>
-                  arr.reduce( cbf(accumulator,element,index,wholeArray) => {
+                  arr.reduce( (accumulator, element, index, wholeArray) => {
                   return #expression
                   } , initialValueOfAccumulator)
               </td>
@@ -107,7 +99,7 @@
           </tr>
           <tr>
               <td>find function</td>
-              <td>arr.find( cbf(element,index,wholeArray) => { return #condition } )</td>
+              <td>arr.find( (element, index, wholeArray) => { return #condition } )</td>
               <td>used to find value from array using condition </td>
               <td>Yes (condition) </td>
               <td>returns single value which satisfies condition first</td>
