@@ -4,9 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    * {
+        font-family: monospace;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    pre {
+        font-size: 17px;
+    }
+
+    td {
+        font-size: 14px;
+        padding: 10px;
+    }
+</style>
+
 </head>
 <body>
   <h1>Array Methods</h1>
+
+ 
+      
+  
+      <table border="1px">
+          <tr style="font-weight: bolder;">
+              <td>HOF Name</td>
+              <td>HOF Syntax</td>
+              <td>Use</td>
+              <td>Can we return anything ?</td>
+              <td>If returning , returned value is in which format ?</td>
+              <td>Are we modifying original array?</td>
+          </tr>
+          <tr>
+              <td>forEach</td>
+              <td>arr.forEach( cbf(element,index,wholeArray) => {} )</td>
+              <td>Iterate Over Array element</td>
+              <td>No</td>
+              <td>N/A</td>
+              <td>No</td>
+          </tr>
+          <tr>
+              <td>sort function</td>
+              <td>
+                  Ascending Order <br> <br>
+                  arr.sort( cbf(currentValue,nextValue) => { return currentValue-nextValue } ) <br> <br>
+                  Descending Order <br> <br>
+                  arr.sort( cbf(currentValue,nextValue) => { return nextValue-currentValue } )
+              </td>
+              <td>sort values in order</td>
+              <td>yes</td>
+              <td>sorted Array[]
+                  <br>
+                  cbf of sorted() takes two parameters - currentValue & nextValue <br>
+                  It returns a value that is less than, equal to, or greater than 0 <br>
+                  If the result is less than 0, the current value comes first <br>
+                  If the result is greater than 0, the next value comes first <br>
+                  If the result is equal to 0, the order of the values remains the same
+              </td>
+              <td>Yes</td>
+          </tr>
+          <tr>
+              <td>map function</td>
+              <td>arr.map( cbf(element,index,wholeArray) => { return } )</td>
+              <td>Iterate Over Array element and map values as specified</td>
+              <td>Yes</td>
+              <td>returning Array[]</td>
+              <td>No</td>
+          </tr>
+          <tr>
+              <td>filter function</td>
+              <td>arr.filter( cbf(element,index,wholeArray) => { return #condition } )</td>
+              <td>filter out array value <br>
+                  based on condition returning
+              </td>
+              <td>Yes (condition) </td>
+              <td>returning filtered Array[]</td>
+              <td>No</td>
+          </tr>
+          <tr>
+              <td>reduce function</td>
+              <td>
+                  arr.reduce( cbf(accumulator,element,index,wholeArray) => {
+                  return #expression
+                  } , initialValueOfAccumulator)
+              </td>
+              <td>reduce entire array and give single output </td>
+              <td>Yes (expression)</td>
+              <td>returns reduced single value</td>
+              <td>No </td>
+          </tr>
+          <tr>
+              <td>find function</td>
+              <td>arr.find( cbf(element,index,wholeArray) => { return #condition } )</td>
+              <td>used to find value from array using condition </td>
+              <td>Yes (condition) </td>
+              <td>returns single value which satisfies condition first</td>
+              <td>No</td>
+          </tr>
+      </table>
+  
+
   <script src="./index.js"></script>
 </body>
 </html>
