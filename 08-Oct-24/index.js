@@ -74,6 +74,8 @@
 // console.log(item4);
 // console.log(item6);
 
+//! Example ---------->
+
 console.log(window);
 
 console.log(window.document);
