@@ -74,6 +74,20 @@
 //! 7.	**Destructuring Function Parameters**:
 //    Write a function `getProfile({ name, age, country })` that takes an object as an argument. Destructure the object to extract `name`, `age`, and `country` and use them inside the function.
 
+// function getProfile({ name, age, country }) {
+//   console.log(name);
+//   console.log(age);
+//   console.log(country);
+// }
+
+// let obj = {
+//   name: "Mahesh",
+//   age: 22,
+//   country: "INDIA",
+// };
+
+// getProfile(obj);
+
 //! 8.	**Destructuring Nested Objects**:
 //    Given the object `const person = { name: “Bob”, details: { age: 25, address: { city: “New York”, country: “USA” } } }`, destructure it to get the `name`, `age`, `city`, and `country` into separate variables.
 
@@ -172,11 +186,39 @@
 //! 16.	**Using Spread in Function Arguments**:
 //     Write a function `sum(a, b, c)` that takes three numbers as arguments. Call this function with an array `[5, 10, 15]` using the spread operator to pass the values as individual arguments.
 
+// function sum(a, b, c) {
+//   return a + b + c;
+// }
+
+// let arr = [5, 10, 15];
+
+// console.log(sum(...arr));
+
 //! 17.	**Rest Operator in Function Parameters**:
 //     Write a function `calculateTotal(…prices)` that accepts any number of price values as arguments. Inside the function, sum all the price values and return the total.
 
+// function calculateTotal(...prices) {
+//   return prices.reduce((acc, current) => acc + current, 0);
+// }
+
+// let prices1 = [100, 200, 300, 400, 500];
+// let prices2 = [100, 200, 300, 400];
+// let prices3 = [100, 200, 300];
+
+// console.log(calculateTotal(...prices2));
+
 //! 18.	**Combining Rest and Spread**:
 //     You have a function `combineArrays(arr1, arr2)` that merges two arrays. Modify the function so that it can accept any number of arrays using the rest operator. Use the spread operator inside the function to merge the arrays.
+
+// function combineArrays(arr1, arr2) {
+//   let mergerdArr = [...arr1, ...arr2];
+//   return mergerdArr;
+// }
+
+// let arr1 = [10, 20, 30];
+// let arr2 = [40, 50, 60];
+
+// console.log(combineArrays(arr1, arr2));
 
 //! 19.	**Array Destructuring with Spread**:
 //     Given the array `const nums = [1, 2, 3, 4, 5]`, destructure it to extract the first number into one variable and the rest of the numbers into another array using the spread operator.
