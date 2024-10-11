@@ -91,7 +91,7 @@
 //! 8.	**Destructuring Nested Objects**:
 //    Given the object `const person = { name: “Bob”, details: { age: 25, address: { city: “New York”, country: “USA” } } }`, destructure it to get the `name`, `age`, `city`, and `country` into separate variables.
 
-// const person = {
+// let person = {
 //   name: "Bob",
 //   details: { age: 25, address: { city: "New York", country: "USA" } },
 // };
@@ -232,7 +232,7 @@
 //! 20.	**Rest and Spread in Object Destructuring**:
 //     You have an object `const config = { host: “localhost”, port: 3000, user: “admin”, password: “1234” }`. Destructure this object to extract `host` and `port` into separate variables, while using the rest operator to group the remaining properties into another object. Use the spread operator to modify this new object by changing the `user` property.
 
-// const config = {
+// let config = {
 //   host: "localhost",
 //   port: 3000,
 //   user: "admin",
