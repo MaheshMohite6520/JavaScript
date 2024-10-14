@@ -49,7 +49,7 @@
 // console.log(age);
 // console.log(loc);
 
-// console.log(location); // location is reserved word in JS
+// console.log(location); // location is reserved keyword in JS
 
 //! 5.	**Renaming During Object Destructuring**:
 //    You have an object `const point = { x: 10, y: 20 }`. Destructure the object to rename `x` as `horizontal` and `y` as `vertical`. Store the values in these renamed variables.
@@ -61,6 +61,8 @@
 // console.log(horizontal);
 // console.log(vertical);
 
+//! Note : When we assign a variable to another variable we have tp use colon(:)
+
 //! 6.	**Providing Default Values**:
 //    Given the object `const book = { title: “JavaScript Basics”, year: 2021 }`, destructure it to extract `title`, `year`, and a non-existent `author` property. Assign a default value of “Unknown Author” to `author`.
 
@@ -70,6 +72,8 @@
 // console.log(title);
 // console.log(year);
 // console.log(author);
+
+//! Note : When we assign a value to another variable we have tp use equals(=)
 
 //! 7.	**Destructuring Function Parameters**:
 //    Write a function `getProfile({ name, age, country })` that takes an object as an argument. Destructure the object to extract `name`, `age`, and `country` and use them inside the function.
@@ -92,8 +96,8 @@
 //    Given the object `const person = { name: “Bob”, details: { age: 25, address: { city: “New York”, country: “USA” } } }`, destructure it to get the `name`, `age`, `city`, and `country` into separate variables.
 
 // let person = {
-//   name: "Bob",
-//   details: { age: 25, address: { city: "New York", country: "USA" } },
+//   name: "Mahesh",
+//   details: { age: 22, address: { city: "Pune", country: "INDIA" } },
 // };
 
 // let {
@@ -159,9 +163,10 @@
 //     Given two arrays `const start = [1, 2]` and `const end = [9, 10]`, use the spread operator to concatenate the `start` array at the beginning of the `end` array.
 
 // let start = [1, 2];
-// let end = [...start, 9, 10];
+// let end = [9, 10];
+// let mergerdArr = [...start, ...end];
 
-// console.log(end);
+// console.log(mergerdArr);
 
 //! 14.	**Copying an Object Using Spread**:
 //     You have an object `const car = { make: “Toyota”, model: “Corolla” }`. Use the spread operator to create a copy of this object. Modify the copy without affecting the original object.
@@ -181,23 +186,28 @@
 // let userSettings = { volume: 30 };
 
 // let obj = { ...defaults, ...userSettings };
+// // let obj = {...userSettings, ...defaults };
 // console.log(obj);
 
 //! 16.	**Using Spread in Function Arguments**:
 //     Write a function `sum(a, b, c)` that takes three numbers as arguments. Call this function with an array `[5, 10, 15]` using the spread operator to pass the values as individual arguments.
 
-// function sum(a, b, c) {
+// let sum = (a, b, c) => {
 //   return a + b + c;
-// }
+// };
 
 // let arr = [5, 10, 15];
 
 // console.log(sum(...arr));
+// console.log(sum(5, 10, 15));
 
 //! 17.	**Rest Operator in Function Parameters**:
 //     Write a function `calculateTotal(…prices)` that accepts any number of price values as arguments. Inside the function, sum all the price values and return the total.
 
+//! rest
 // function calculateTotal(...prices) {
+//   console.log(prices);
+//   console.log(...prices);
 //   return prices.reduce((acc, current) => acc + current, 0);
 // }
 
@@ -205,20 +215,21 @@
 // let prices2 = [100, 200, 300, 400];
 // let prices3 = [100, 200, 300];
 
-// console.log(calculateTotal(...prices2));
+// console.log(calculateTotal(...prices2)); //! spread
 
 //! 18.	**Combining Rest and Spread**:
 //     You have a function `combineArrays(arr1, arr2)` that merges two arrays. Modify the function so that it can accept any number of arrays using the rest operator. Use the spread operator inside the function to merge the arrays.
 
-// function combineArrays(arr1, arr2) {
-//   let mergerdArr = [...arr1, ...arr2];
-//   return mergerdArr;
-// }
+// let combineArrays = (...allArrays) => {
+//   return allArrays;
+// };
 
 // let arr1 = [10, 20, 30];
 // let arr2 = [40, 50, 60];
+// let arr3 = [70, 80, 90];
+// let arr4 = [100, 110, 120];
 
-// console.log(combineArrays(arr1, arr2));
+// console.log(combineArrays(...arr1, ...arr2, ...arr3, ...arr4));
 
 //! 19.	**Array Destructuring with Spread**:
 //     Given the array `const nums = [1, 2, 3, 4, 5]`, destructure it to extract the first number into one variable and the rest of the numbers into another array using the spread operator.
