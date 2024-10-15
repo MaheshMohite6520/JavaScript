@@ -2,9 +2,23 @@
 
 //! Promises -------------->
 
+//! Promises are the Objects in JavaScript.
 //! It is used to achieve Asynchronous behaviour.
-//! IIt has 2 callback functions and handles them internally.
-//! At a time we can only call then() or catch() not both at a time
+//! In promises we get 3 diffrent states.
+//! 1] pending
+//! 2] resolve
+//! 3] reject
+
+//! 1] pending: Promise will be in pending state when it is neighther resolved or rejected.
+
+//! 2] resolve: Promise will be in resolve state when your Promise is fulfilled. When the promise is resolved it will call then() block and we can pass some arguments along with it.
+
+//! 3] reject: Promise will be in reject state when your Promise is not fulfilled. When the promise is rejected it will call catch() block and we can pass some arguments along with it. catch block can be used to handle the errors and xceptions.
+
+//! Note: Your Promise can either be resolve or rejected at once.
+
+//! Some Asynchronous tasks in JavaScript will internally return the Promise, we just have to handle them by using then() & catch() block.
+//! Example: fetch() method will return the Promise.
 
 // let p1 = new Promise((resolve, reject) => {
 //   let a = 10;
@@ -52,18 +66,26 @@
 //! It will return an Promise.
 //! catch block will execute when internal error occurs.(like Internet Connection)
 
-let p = fetch("https://api.github.com/users");
-console.log(p);
+// let p = fetch("https://api.github.com/users");
+// console.log(p);
 
-p.then((val) => {
-  console.log(val);
+// p.then((val) => {
+//   console.log(val);
 
-  let data = val.json();
-  return data;
-})
-  .then((val2) => {
-    console.log(val2);
+//   let data = val.json();
+//   return data;
+// })
+//   .then((val2) => {
+//     console.log(val2);
+//   })
+//   .catch((err) => {
+//     console.log("Something went wrong", err);
+//   });
+
+fetch("https://api.github.com/users")
+  .then((val) => {
+    return val.json();
   })
-  .catch((err) => {
-    console.log("Something went wrong", err);
+  .then((data) => {
+    console.log(data);
   });
