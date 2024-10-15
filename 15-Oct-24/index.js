@@ -82,10 +82,10 @@
 //     console.log("Something went wrong", err);
 //   });
 
-fetch("https://api.github.com/users")
-  .then((val) => {
-    return val.json();
-  })
-  .then((data) => {
-    console.log(data);
-  });
+// fetch("https://api.github.com/users")
+//   .then((val) => {
+//     return val.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   });
