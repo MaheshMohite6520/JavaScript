@@ -8,6 +8,11 @@
 //! It is used to copy the string from original string.
 //! It will return an new String.
 //! It will not modify the original String.
+//! It allows negative indices, which count from the end of the string.
+//! if start is greater than end does not swap indices.
+
+// let str = "Katappa";
+// console.log(str);
 
 // let val = str.slice(0, 2);
 // console.log(val);
@@ -20,22 +25,35 @@
 
 //! 16] subString(start index, end index) :
 
+//! It is used to copy the string from original string.
+//! It will return an new String.
+//! It will not modify the original String.
+//! It does not allows negative indices.
+//! It swaps the start and end indices if start is greater than end.
+
 // let str = "Katappa";
 // console.log(str);
 
-// let val = str.substring(-1);
+// let val = str.substring(1, 3);
 // console.log(val);
 
-// let val1 = str.substring(0);
+// let val1 = str.substring(0, 3);
 // console.log(val1);
 
 //! 17] substr(start index, length of characters that you want to delete);
+
+//! Extracts a section of a string from start index with a specified length.
+//! If length is omitted(not given or empty), it extracts from start to the end of the string.
+//! If start is negative, it counts from the end of the string.
+//! Returns a new string containing the extracted characters.
+//! It will not modify the original String.
 
 // let str = "Katappa";
 // console.log(str);
 
 // let val = str.substr(-7, 4);
 // console.log(val);
+// console.log(str);
 
 //! 18] includes("character") :
 
@@ -51,8 +69,8 @@
 // let val1 = str.includes("appa");
 // console.log(val1);
 
-//! 19] startsWith(character) :
-//! 20] endsWith(character) :
+//! 19] startsWith("string") :
+//! 20] endsWith("string") :
 
 //! Both methods are used to check wheather the String is starting or ending with particular string or not.
 //! It will return an boolean value.

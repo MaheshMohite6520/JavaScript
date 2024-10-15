@@ -353,14 +353,14 @@
 
 //! 24. Write a program to print the factors of a number and also print the number of factors of that number.
 
-let num = 100;
-let ct = 0;
+// let num = 100;
+// let ct = 0;
 
-for (let i = 1; i < num; i++) {
-  if (num % i == 0) {
-    ct++;
-    console.log(i);
-  }
-}
+// for (let i = 1; i < num; i++) {
+//   if (num % i == 0) {
+//     ct++;
+//     console.log(i);
+//   }
+// }
 
-console.log(`Total Factor count: ${ct}`);
+// console.log(`Total Factor count: ${ct}`);

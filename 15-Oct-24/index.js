@@ -13,9 +13,9 @@
 
 //! 2] resolve: Promise will be in resolve state when your Promise is fulfilled. When the promise is resolved it will call then() block and we can pass some arguments along with it.
 
-//! 3] reject: Promise will be in reject state when your Promise is not fulfilled. When the promise is rejected it will call catch() block and we can pass some arguments along with it. catch block can be used to handle the errors and xceptions.
+//! 3] reject: Promise will be in reject state when your Promise is not fulfilled. When the promise is rejected it will call catch() block and we can pass some arguments along with it. catch block can be used to handle the errors and exceptions.
 
-//! Note: Your Promise can either be resolve or rejected at once.
+//! Note: Your Promise can either be in resolve state or rejected state at once(not in both at a time)
 
 //! Some Asynchronous tasks in JavaScript will internally return the Promise, we just have to handle them by using then() & catch() block.
 //! Example: fetch() method will return the Promise.

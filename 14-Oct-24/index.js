@@ -48,6 +48,6 @@ console.log(obj); // it will be not update
 //! It will return boolean value(true or false)
 
 //! The freeze object is seal as well as freeze.
-//! The sea object is only seal.
+//! The seal object is only seal.
 
 console.log(Object.isFrozen(obj));

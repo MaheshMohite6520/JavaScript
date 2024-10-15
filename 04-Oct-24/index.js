@@ -72,13 +72,14 @@
 
 //! It is an string method.
 //! It is used to convert the String into an array.
-//! It will return an array.
+//! It will return an array & It will not modify the original string.
 //! We have to pass an argument to split() method to split by specific character.
 
-// let str = "Bahubali"
+// let str = "Bahubali";
 
 // let strArr = str.split("");
 // console.log(strArr);
+// console.log(str);
 
 // let strArr = str.split("i");
 // console.log(strArr);
@@ -106,19 +107,40 @@
 
 //! It is an array method used to convert the array into an String.
 //! We have to pass an argument to join() method that will convert the array into an String.
+//! It will not modify the original string.
 
+// let str = "Bahubali";
 // let str2 = str.split("").reverse().join("");
 // console.log(str2);
+// console.log(str);
 
 //! 4] padStart(length, character that you want to add) :
 
 //! It is used to add the characters at the start of the String.
 //! It will return an new String.
+//! It will not modify the original String.
+
+// let str = "Mahesh";
+// console.log(str);
+
+// let newStr = str.padStart(10, 5);
+// console.log(newStr);
+// console.log(str);
 
 //! 5] padEnd(ength, character that you want to add) :
 
 //! It is used to add the characters at the end of the String.
 //! It will return an new String.
+//! It will not modify the original String.
+
+// let str = "Mahesh";
+// console.log(str);
+
+// let newStr = str.padEnd(10, 5);
+// console.log(newStr);
+// console.log(str);
+
+//! Question ----->
 
 // let num = "6520";
 // let newNo = num.padStart(12, "*").padEnd(20, "*");
@@ -128,57 +150,69 @@
 
 //! It will remove the white spaces from start and end(both).
 //! It will return an trimmed string.
+//! It will not modify the original String.
 
 //! 7] trimStart() :
 
 //! It will remove the white spaces from start only.
 //! It will return an trimmed String.
+//! It will not modify the original String.
 
 //! 8] trimEnd() :
 
 //! It will remove the white spaces from end only.
 //! It will return an trimmed String.
+//! It will not modify the original String.
 
 // let str = "      Bahubali       ";
 // console.log(str);
 
 // let start = str.trimStart();
 // console.log(start);
+// console.log(str);
 
 // let end = str.trimEnd();
 // console.log(end);
+// console.log(str);
 
 // let both = str.trim();
 // console.log(both);
+// console.log(str);
 
 //! 9] toUpperCase() :
 
 //! It is used to the String into upper case.
 //! It will return an String.
+//! It will not modify the original String.
 
 //! 10] toLowerCase() :
 
 //! It is used to the String into upper case.
 //! It will return an String.
+//! It will not modify the original String.
 
 //! 11] toLocaleLowerCase() :
 
 //! It is used to the String into upper case.
 //! It will return an String.
+//! It will not modify the original String.
 
 //! 12] toLocaleUpperCase() :
 
 //! It is used to the String into lower case.
 //! It will return an String.
+//! It will not modify the original String.
 
 // let str = "Bahubali";
 // console.log(str);
 
 // let upper = str.toUpperCase();
 // console.log(upper);
+// console.log(str);
 
 // let lower = str.toLowerCase();
 // console.log(lower);
+// console.log(str);
 
 // console.log(str.toLocaleLowerCase());
 // console.log(str.toLocaleUpperCase());
@@ -194,12 +228,15 @@
 //! It is uesd remove the character from String and add the character in place of that character.
 //! It will return an new String.
 //! It will replace the all occurence of the character in the String.
+//! It will not modify the original String.
 
 // let str = "Bahubali";
 // console.log(str);
 
 // console.log(str.replace("a", "i"));
+// console.log(str);
 // console.log(str.replaceAll("a", "i"));
+// console.log(str);
 
 // console.log(
 //   str.replace("Ba", "K").replace("u", "au").replace("b", "g").replace("l", "ll")
