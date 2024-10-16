@@ -129,6 +129,7 @@
 
 // fetch("https://jsonplaceholder.typicode.com/posts/1")
 //   .then((val) => {
+//     console.log(val);
 //     return val.json();
 //   })
 //   .then((data) => {
@@ -136,8 +137,10 @@
 //     return data.userId;
 //   })
 //   .then((id) => {
+//     console.log(id);
 //     fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 //       .then((val) => {
+//         console.log(val);
 //         return val.json();
 //       })
 //       .then((data) => console.log(data));

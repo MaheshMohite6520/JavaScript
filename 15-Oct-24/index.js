@@ -19,6 +19,7 @@
 
 //! Some Asynchronous tasks in JavaScript will internally return the Promise, we just have to handle them by using then() & catch() block.
 //! Example: fetch() method will return the Promise.
+//! Promises are introduced in JS to overcome callback-hell
 
 // let p1 = new Promise((resolve, reject) => {
 //   let a = 10;
