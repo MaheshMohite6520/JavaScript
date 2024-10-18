@@ -11,11 +11,11 @@
 //! If ID is repeated then JS will not apply to both of the ID's, JS will only apply to the first occurence.
 //! SCRIPT tag must be declared at the end of the body tag otherwise JS will not apply to HTML element.
 
-let heading = document.getElementById("heading");
+// let heading = document.getElementById("heading");
 
-heading.style.color = "red";
-heading.style.fontSize = "30px";
-heading.title = "HTML Heading Tag";
+// heading.style.color = "red";
+// heading.style.fontSize = "30px";
+// heading.title = "HTML Heading Tag";
 
-console.log(heading);
-console.log(typeof heading);
+// console.log(heading);
+// console.log(typeof heading);

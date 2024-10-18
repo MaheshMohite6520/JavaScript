@@ -6,9 +6,10 @@
 //! 2] Time in MilliSeconds
 //! It will execute only one time.
 
-// setTimeout(() => {
+// let time = setTimeout(() => {
 //   console.log("SetTimeout() Function");
 // }, 5000);
+// console.log(time);
 
 //! <----------------------- setInterval() ------------------------>
 
@@ -19,14 +20,14 @@
 //! It will execute for every interval.
 //! We can stop it by using clearInterval(intervalName) function & condition.
 
-// let count = 0;
+let count = 0;
 
-// let myInterval = setInterval(() => {
-//   count++;
+let myInterval = setInterval(() => {
+  count++;
 
-//   console.log(count);
+  console.log(count);
 
-//   if (count == 10) {
-//     clearInterval(myInterval);
-//   }
-// }, 1000);
+  if (count == 10) {
+    clearInterval(myInterval);
+  }
+}, 1000);
