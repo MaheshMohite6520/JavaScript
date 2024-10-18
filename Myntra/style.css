@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navClass{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  /* justify-content: space-between; */
+  padding: 0px 20px 0px 40px;
+  background-color: antiquewhite;
+}
+
+.div1Class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sections {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 0 20px 0 20px;
+}
+
+.section {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  color: rgb(60, 60, 60);
+}
+input {
+  width: 100px;
+}
+
+.profileSection {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  color: rgb(60, 60, 60);
+}
+
+input {
+  font-size: 15px;
+  padding: 4px 5px 4px 5px;
+  width: 400px;
+  height: 20px;
+  border: 5px;
+  border-radius: 5px;
+  border: 0.5px solid gray;
+  margin: 0px 50px 0 0;
+}
