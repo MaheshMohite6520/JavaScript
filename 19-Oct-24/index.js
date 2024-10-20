@@ -71,7 +71,6 @@ let btn = document.querySelector("button");
 input.addEventListener("input", (e) => {
   if (e.data != null) {
     str += e.data;
-  } else {
   }
   console.log(str);
   heading.innerText = str;
