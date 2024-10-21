@@ -381,7 +381,7 @@
 //   }
 // });
 
-//! 8. **Change Font Size:**
+//! 18. **Change Font Size:**
 //     - Add a paragraph with some text. Below the paragraph, add a button labeled “Increase Font Size”. Write a function that increases the font size of the paragraph by 2px every time the button is clicked.
 
 // let { body } = document;
@@ -397,8 +397,61 @@
 
 // body.append(btn);
 
-// btn.addEventListener("click", () => {
+// btn.addEventListener("click", (e) => {
 //   fontSize = parseInt(p.style.fontSize);
-
+//   console.log(e);
 //   p.style.fontSize = fontSize + 2 + "px";
+// });
+
+//! ### Event Handling Tasks:
+
+// 21. **Button Hover Event:**
+//     - Add a button labeled “Hover Me”. Write a function that changes the background color of the button when the user hovers over it and reverts the color when the mouse leaves.
+
+// let { body } = document;
+
+// let btn = document.createElement("button");
+// btn.textContent = "Hover Me";
+// btn.style.backgroundColor = "white";
+
+// body.append(btn);
+
+// let changeColor = () => {
+//   btn.style.backgroundColor = "red";
+// };
+
+// btn.addEventListener("mouseover", changeColor);
+
+// btn.addEventListener("mouseout", () => {
+//   btn.style.backgroundColor = "white";
+// });
+
+//! 22. **Form Submission Event:**
+//     - Create a simple form with an input field and a submit button. Write a function that prevents the form from being submitted if the input is empty, and display an error message below the form. Use `event.preventDefault()` to prevent form submission.
+
+// let { body } = document;
+
+// let form = document.createElement("form");
+
+// body.append(form);
+
+// let input = document.createElement("input");
+// input.type = "text";
+// form.append(input);
+
+// let btn = document.createElement("button");
+// btn.textContent = "Submit";
+// form.append(btn);
+
+// let div = document.createElement("div");
+// body.append(div);
+
+// btn.addEventListener("click", () => {
+//   event.preventDefault();
+
+//   if (input.value == "") {
+//     div.append("First fill the form & then Submit......");
+//   } else {
+//     div.append("Form Submitted Successfully........");
+//   }
 // });
